@@ -6,12 +6,12 @@ on:
   workflow_dispatch:
 
 env:
-  NODE_VERSION: '18'
+  NODE-VERSION: '18'
 
 jobs:
   demonstrando-estrutura:
     name: "Demostrar Estrutura Básica"
-    runs-on: unbuntu-latest
+    runs-on: ubuntu-latest
 
     steps:
      - name: Chackout do Código
@@ -38,7 +38,7 @@ jobs:
      - name: Variáveis e Contexto
        run: |
         echo " == VARIÁVEIS E CONTEXTO == "
-        echo " Variáveis env: ${{ env.NODE_VERSION }} "
+        echo " Variáveis env: ${{ env.NODE-VERSION }} "
         echo " 1. env: Definição de variáveis de ambiente "
         echo " 2. contextos: Acesso a informações do workflow. job, runner, etc. "
         echo ""
